@@ -1,0 +1,36 @@
+name: MenuWarps
+version: 1.0.0
+main: org.menudocs.warps.MenuWarps
+api-version: 1.17
+prefix: menuwarps
+authors: [ MenuDocs ]
+description: A warps plugin for the MenuDocs SMP
+website: menudocs.org
+depend: [ 'Honeycomb' ]
+commands:
+  warps:
+    description: Manages the warps for this server.
+    aliases: [ locations ]
+  warp:
+    description: Teleports the player to the specified warp
+    permission: warps.warp
+permissions:
+  warps.warp:
+    default: op
+    description: Allows a player to warp
+  warps.create:
+    default: op
+    description: Allow a player to create a warp.
+  warps.save:
+    default: op
+    description: Allows a player to save all current warps.
+  warps.delete:
+    default: op
+    description: Allows a player to delete a warp.
+  warps.view:
+    default: not op
+    description: Allows a player to view the current warps.
+  warps.accept:
+    default: op
+    description: Allows a player to approve a warp
+
